@@ -1,0 +1,12 @@
+version: 3'
+
+services:
+
+  nerdstore-identidade-psql-db:
+    image: postgres
+    container_name: nerdstore-identidade-psql-db
+    environment:
+      POSTGRES_USER: "identidade"
+      POSTGRES_PASSWORD: "identidade"
+    ports:
+      - "5662:5432"
